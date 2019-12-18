@@ -325,7 +325,7 @@ final class SonargraphBase
         {
             if (inputStream != null)
             {
-                final IMetaDataController controller = ControllerFactory.createMetaDataController();
+                final IMetaDataController controller = ControllerFactory.createMetaDataController(false);
                 final ResultWithOutcome<IExportMetaData> result = controller.loadExportMetaData(inputStream, BUILT_IN_META_DATA_RESOURCE_PATH);
                 if (result.isFailure())
                 {

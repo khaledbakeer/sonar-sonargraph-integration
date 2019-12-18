@@ -122,7 +122,7 @@ public final class SonargraphBaseTest
     @Test
     public void testCustomMetrics()
     {
-        final ISonargraphSystemController controller = ControllerFactory.createController();
+        final ISonargraphSystemController controller = ControllerFactory.createController(false);
         final Result result = controller.loadSystemReport(new File("./src/test/report/IntegrationSonarqube.xml"));
         assertTrue("Failed to load report", result.isSuccess());
 
@@ -148,7 +148,7 @@ public final class SonargraphBaseTest
                         .create("projectKey", "./src/main/java/com/hello2morrow/sonargraph/integration/sonarqube/SonargraphBase.java")
                         .setLanguage(SonargraphBase.JAVA).build());
 
-        final ISonargraphSystemController controller = ControllerFactory.createController();
+        final ISonargraphSystemController controller = ControllerFactory.createController(false);
         final Result result = controller.loadSystemReport(new File("./src/test/report/IntegrationSonarqube.xml"));
         assertTrue("Failed to load report", result.isSuccess());
 

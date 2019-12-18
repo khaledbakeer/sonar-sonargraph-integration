@@ -126,7 +126,7 @@ public final class SonargraphSensor implements Sensor
         final File reportFile = getReportFile(context.config());
         if (reportFile != null)
         {
-            final ISonargraphSystemController controller = ControllerFactory.createController();
+            final ISonargraphSystemController controller = ControllerFactory.createController(false);
 
             final File baseDir = getSystemBaseDirectory(context.config());
             Result result;

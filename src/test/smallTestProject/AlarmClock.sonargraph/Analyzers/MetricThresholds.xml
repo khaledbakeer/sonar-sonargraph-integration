@@ -1,7 +1,8 @@
 <?xml version="1.0" ?>
-<analyzerConfiguration version="8.5.0.0" analyzer="MetricThresholds">
-    <stringEntry value="0:48" name="CoreAcd:Module"></stringEntry>
-    <stringEntry value="0.0:75.0" name="CoreAcd:System"></stringEntry>
-    <stringEntry value="0:900" name="CoreLinesOfCode:SourceFile"></stringEntry>
-    <stringEntry value="0:25" name="CoreModifiedCcn:Routine"></stringEntry>
+<analyzerConfiguration version="9.12.2.589" analyzer="MetricThresholds">
+	<stringEntry value="0.00:48.00:WARNING" name="CoreAcd:Module"></stringEntry>
+	<stringEntry value="0.00:75.00:WARNING" name="CoreAcd:System"></stringEntry>
+	<stringEntry value="0:900:WARNING" name="CoreLinesOfCode:SourceFile"></stringEntry>
+	<stringEntry value="0:25:WARNING" name="CoreModifiedCcn:Routine"></stringEntry>
+	<stringEntry value="0:1:WARNING" name="CoreParameters:Routine"></stringEntry>
 </analyzerConfiguration>
